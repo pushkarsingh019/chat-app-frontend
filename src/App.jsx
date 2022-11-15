@@ -8,7 +8,7 @@ function App(){
     const [room, setRoom] = useState("");
     const [showChat, setshowChat] = useState(false);
 
-    let productionSocket = "https://chat-app-socketio.vercel.app";
+    let productionSocket = "https://chat-backend-production-cb67.up.railway.app";
     let developmentSocket = "http://localhost:8080/"
 
     const socket = io.connect(productionSocket, {transports : [`websocket`]});
